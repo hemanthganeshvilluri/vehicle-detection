@@ -1,16 +1,17 @@
-# 🚗 Vehicle Detection (5 Classes) using YOLOv8n
+# 🚗 Vehicle Detection & Counting (5 Classes) using YOLOv8n
 
-This project focuses on **vehicle detection and classification** using **Ultralytics YOLOv8n**. The model is trained on a dataset containing **5 vehicle classes** and deployed using **FastAPI** for video processing.
+This project focuses on **vehicle detection, classification, and counting** using **Ultralytics YOLOv8n**. The model detects vehicles across **5 classes** and counts vehicles moving in **opposite lanes (two-way traffic)**. The system is deployed using **FastAPI** for video processing.
 
 ---
 
 ## 📌 Project Overview
 
 - 🔍 Detects and classifies vehicles into 5 classes  
+- 🔢 Counts vehicles moving in **opposite lanes (two-way traffic)**  
 - ⚡ Built using **YOLOv8n (Ultralytics)**  
 - 🎥 Currently supports **video input processing**  
 - 🚀 Backend deployed using **FastAPI**  
-- 🔜 Future scope: **Live camera (real-time detection)**  
+- 🔜 Future scope: **Live camera (real-time detection + counting)**  
 
 ---
 
@@ -66,8 +67,11 @@ vehicle-detection/
 1. Upload or provide a video  
 2. Frames are processed using OpenCV  
 3. YOLOv8 detects vehicles in each frame  
-4. Bounding boxes and labels are added  
-5. Output video is generated  
+4. Vehicles are classified into 5 categories  
+5. Vehicles are tracked and counted based on movement direction  
+6. Counting is performed separately for **opposite lanes (incoming & outgoing traffic)**  
+7. Bounding boxes, labels, and counts are displayed  
+8. Output video is generated  
 
 ---
 
@@ -99,6 +103,7 @@ http://127.0.0.1:8000
 ## 📈 Features
 
 - ✅ Multi-class vehicle detection  
+- ✅ Opposite lane (two-way) vehicle counting  
 - ✅ Fast and lightweight model (YOLOv8n)  
 - ✅ Video processing support  
 - ✅ FastAPI backend  
@@ -107,10 +112,10 @@ http://127.0.0.1:8000
 
 ## 🔮 Future Improvements
 
-- 🎥 Live camera detection  
-- 🌐 Web UI improvements  
+- 🎥 Live camera detection with counting  
+- 📊 Advanced tracking (ID-based tracking)  
+- 🌐 Interactive dashboard / UI  
 - ☁️ Cloud deployment  
-- 📊 Model performance optimization  
 
 ---
 
