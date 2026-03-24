@@ -1,0 +1,6 @@
+uvicorn
+fastapi
+ultralytics
+tempfile
+opencv-python
+numpy
