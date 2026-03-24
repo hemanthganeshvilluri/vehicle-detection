@@ -1,17 +1,18 @@
-# 🚗 Vehicle Detection & Counting (5 Classes) using YOLOv8n
+# 🚗 Vehicle Detection, Tracking & Counting (5 Classes) using YOLOv8n + ByteTrack
 
-This project focuses on **vehicle detection, classification, and counting** using **Ultralytics YOLOv8n**. The model detects vehicles across **5 classes** and counts vehicles moving in **opposite lanes (two-way traffic)**. The system is deployed using **FastAPI** for video processing.
+This project focuses on **vehicle detection, tracking, and counting** using **Ultralytics YOLOv8n** with **ByteTrack**. The system detects vehicles across **5 classes**, assigns **unique IDs** to each vehicle, and counts vehicles moving in **opposite lanes (two-way traffic)**. It is deployed using **FastAPI** for video processing.
 
 ---
 
 ## 📌 Project Overview
 
 - 🔍 Detects and classifies vehicles into 5 classes  
+- 🆔 Assigns **unique IDs** to each vehicle using **ByteTrack**  
 - 🔢 Counts vehicles moving in **opposite lanes (two-way traffic)**  
 - ⚡ Built using **YOLOv8n (Ultralytics)**  
 - 🎥 Currently supports **video input processing**  
 - 🚀 Backend deployed using **FastAPI**  
-- 🔜 Future scope: **Live camera (real-time detection + counting)**  
+- 🔜 Future scope: **Live camera (real-time detection + tracking + counting)**  
 
 ---
 
@@ -43,6 +44,7 @@ This project focuses on **vehicle detection, classification, and counting** usin
 ## ⚙️ Tech Stack
 
 - **Ultralytics YOLOv8**
+- **ByteTrack (for tracking & unique IDs)**
 - **FastAPI**
 - **OpenCV (cv2)**
 - **Python**
@@ -67,11 +69,12 @@ vehicle-detection/
 1. Upload or provide a video  
 2. Frames are processed using OpenCV  
 3. YOLOv8 detects vehicles in each frame  
-4. Vehicles are classified into 5 categories  
-5. Vehicles are tracked and counted based on movement direction  
-6. Counting is performed separately for **opposite lanes (incoming & outgoing traffic)**  
-7. Bounding boxes, labels, and counts are displayed  
-8. Output video is generated  
+4. ByteTrack assigns a **unique ID** to each detected vehicle  
+5. Vehicles are tracked across frames  
+6. Movement direction is analyzed  
+7. Vehicles are counted based on **opposite lane direction (incoming & outgoing)**  
+8. Bounding boxes, class labels, IDs, and counts are displayed  
+9. Output video is generated  
 
 ---
 
@@ -103,6 +106,7 @@ http://127.0.0.1:8000
 ## 📈 Features
 
 - ✅ Multi-class vehicle detection  
+- ✅ Unique ID tracking using ByteTrack  
 - ✅ Opposite lane (two-way) vehicle counting  
 - ✅ Fast and lightweight model (YOLOv8n)  
 - ✅ Video processing support  
@@ -112,9 +116,9 @@ http://127.0.0.1:8000
 
 ## 🔮 Future Improvements
 
-- 🎥 Live camera detection with counting  
-- 📊 Advanced tracking (ID-based tracking)  
-- 🌐 Interactive dashboard / UI  
+- 🎥 Live camera detection with tracking & counting  
+- 📊 Advanced analytics dashboard  
+- 🌐 Web UI improvements  
 - ☁️ Cloud deployment  
 
 ---
