@@ -77,16 +77,14 @@ async function uploadVideo() {
     formData.append("file", file);
 
     try {
-        await fetch("http://127.0.0.1:10000/upload", {
+        await fetch("/upload", {
             method: "POST",
             body: formData
         });
 
         status.innerText = "Processing & Streaming...";
 
-        // 🔥 THIS SHOWS YOUR VIDEO STREAM
-        document.getElementById("stream").src =
-            "http://127.0.0.1:10000/stream";
+        document.getElementById("stream").src = "/stream";
 
     } catch (error) {
         console.error(error);
