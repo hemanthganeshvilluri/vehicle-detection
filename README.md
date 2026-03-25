@@ -1,6 +1,6 @@
 # 🚗 Vehicle Detection, Tracking & Counting (5 Classes) using YOLOv8n + ByteTrack
 
-This project focuses on **vehicle detection, tracking, and counting** using **Ultralytics YOLOv8n** with **ByteTrack**. The system detects vehicles across **5 classes**, assigns **unique IDs** to each vehicle, and counts vehicles moving in **opposite lanes (two-way traffic)**. It is deployed using **FastAPI** for video processing.
+This project focuses on **vehicle detection, tracking, and counting** using **Ultralytics YOLOv8n** with **ByteTrack**. The system detects vehicles across **5 classes**, assigns **unique IDs** to each vehicle, and counts vehicles moving in **opposite lanes (two-way traffic)**. It is deployed using **FastAPI** and hosted on the cloud using **Render**.
 
 ---
 
@@ -11,8 +11,15 @@ This project focuses on **vehicle detection, tracking, and counting** using **Ul
 - 🔢 Counts vehicles moving in **opposite lanes (two-way traffic)**  
 - ⚡ Built using **YOLOv8n (Ultralytics)**  
 - 🎥 Currently supports **video input processing**  
-- 🚀 Backend deployed using **FastAPI**  
+- ☁️ Deployed on cloud using **Render**  
 - 🔜 Future scope: **Live camera (real-time detection + tracking + counting)**  
+
+---
+
+## 🌐 Live Demo
+
+- 🚀 Deployed Application:  
+  https://vehicle-detection-lzxb.onrender.com  
 
 ---
 
@@ -48,6 +55,7 @@ This project focuses on **vehicle detection, tracking, and counting** using **Ul
 - **FastAPI**
 - **OpenCV (cv2)**
 - **Python**
+- **Render (Cloud Deployment)**
 
 ---
 
@@ -111,6 +119,7 @@ http://127.0.0.1:8000
 - ✅ Fast and lightweight model (YOLOv8n)  
 - ✅ Video processing support  
 - ✅ FastAPI backend  
+- ✅ Cloud deployment using Render  
 
 ---
 
@@ -119,7 +128,7 @@ http://127.0.0.1:8000
 - 🎥 Live camera detection with tracking & counting  
 - 📊 Advanced analytics dashboard  
 - 🌐 Web UI improvements  
-- ☁️ Cloud deployment  
+- ⚡ Performance optimization  
 
 ---
 
