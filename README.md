@@ -63,11 +63,12 @@ This project focuses on **vehicle detection, tracking, and counting** using **Ul
 
 ```
 vehicle-detection/
-│── templates/           # HTML templates (if used for UI)
+│── templates/           # HTML templates (used for UI)
 │── weights/             # Trained YOLOv8 model weights
 │── app.py               # FastAPI application
 │── requirements.txt     # Dependencies
 │── README.md            # Project documentation
+│──runtext.txt           # Python version used for stable deployment
 ```
 
 ---
