@@ -7,7 +7,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import cv2
 from ultralytics import YOLO
 
-model = YOLO('weights/best.pt')
+model = YOLO('weights/best.onnx')
 
 app = FastAPI(title = 'Vehicle Detection')
 
